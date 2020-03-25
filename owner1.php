@@ -26,11 +26,11 @@
                 <label for="password"><a>Mot de passe:</a></label>
                 <input type="password" id="password" name="password" placeholder="Entrez votre mot de passe" required>
             </div>
+        </fieldset>
             <!--Submit-->
             <div class="bouton">
                 <button type="submit"> Valider la transaction </button>
             </div>
-        </fieldset>
     </form>
 </body>
 </html>
