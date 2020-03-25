@@ -16,9 +16,9 @@ try {
 
 // Reception Des Données GET
 
-$identifiant_num = '1123452537'; //Entre le nom attribué dans votre champs Form
-$ReqName = 'julien'; //Entre le nom attribué dans votre champs Form
-$validation_key= 'tntZ9*'; //Entre le nom attribué dans votre champs Form
+$identifiant_num = $_POST['']; //Entre le nom attribué dans votre champs Form
+$ReqName = $_POST['']; //Entre le nom attribué dans votre champs Form
+$validation_key= $_POST['']; //Entre le nom attribué dans votre champs Form
 
 
 //nom en BDD
