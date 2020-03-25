@@ -24,9 +24,9 @@ try {
 
 // -------------------------- Reception Des Données POST ------------------------------------
 
-$identifiant_num = $_POST[''];  //Entre le nom attribué dans votre champs Form
-$ReqName = $_POST[''];          //Entre le nom attribué dans votre champs Form
-$validation_key= $_POST[''];    //Entre le nom attribué dans votre champs Form
+$identifiant_num = $_POST['id'];  //Entre le nom attribué dans votre champs Form
+$ReqName = $_POST['name'];          //Entre le nom attribué dans votre champs Form
+$validation_key= $_POST['password'];    //Entre le nom attribué dans votre champs Form
 
 
 //-----------------------nom des colonnes BDD------------------------------------
