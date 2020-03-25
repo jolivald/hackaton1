@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="styles.css" rel="stylesheet">
+    <link href="hackaton.css" rel="stylesheet">
     <title>Ma banque</title>
 </head>
 
@@ -16,10 +16,10 @@
 
         <nav>
             <ul>
-                <li><a href="owner1.php">Mme Orlando></a></li>
-                <li><a href="owner2.php">Mr Schylowski></a></li>   
-                <li><a href="owner3.php">Mr Petrov></a></li>
-                <li><a href="owner4.php">Mme Julien<></a></li>
+                <li><a href="owner1.php">Mme Orlando</a></li>
+                <li><a href="owner2.php">Mr Schylowski</a></li>   
+                <li><a href="owner3.php">Mr Petrov</a></li>
+                <li><a href="owner4.php">Mme Julien</a></li>
             </ul>
         </nav>
     </header>
