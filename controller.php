@@ -1,9 +1,9 @@
 <?php
-// ---------------------- CODE GET---------------------------------------
+// ---------------------- CODE GET----IdValid---------------------------------
 /* 
-    0 ===> ERREUR dans l identification
-    1 ===> Identification REUSSI
-    2 ===> ERREUR de connexion a la BDD
+    3 ===> ERREUR dans l identification
+    2 ===> Identification REUSSI
+    1 ===> ERREUR de connexion a la BDD
 
 
 */
@@ -19,7 +19,7 @@ try {
     
 } catch ( PDOException $E) {
         
-        die( header('Location: index.php?IdValid=2'));
+        die( header('Location: index.php?IdValid=1'));
 }
 
 // -------------------------- Reception Des Données POST ------------------------------------
@@ -52,7 +52,7 @@ $rs_select-> execute (array($ReqName));                         //Recuperation G
                             //Les données sont correct :
 
                             setcookie($d->id,$d->name, time()+ 3600 * 24 *365);     // création du cookie avec comme nom le ID et valeur le NAME
-                            header('Location: index.php?IdValid=1');                // Renvoi vers index avec une validation sur 1 en GET
+                            header('Location: index.php?IdValid=2');                // Renvoi vers index avec une validation sur 1 en GET
                             
                         }
 
@@ -60,7 +60,7 @@ $rs_select-> execute (array($ReqName));                         //Recuperation G
                         {
                             // les données sont incorrect :
 
-                            header('Location: index.php?IdValid=0'); // Renvoi vers index avec une validation sur 0 en GET
+                            header('Location: index.php?IdValid=3'); // Renvoi vers index avec une validation sur 0 en GET
                             
                         }
 
@@ -69,7 +69,7 @@ $rs_select-> execute (array($ReqName));                         //Recuperation G
                 else
                 {
                     // le name est inconnu
-                    header('Location: index.php?IdValid=0'); // Renvoi vers index avec une validation sur 0 en GET
+                    header('Location: index.php?IdValid=3'); // Renvoi vers index avec une validation sur 0 en GET
                 }
                 
     
