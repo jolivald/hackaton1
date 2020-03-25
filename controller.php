@@ -15,8 +15,8 @@ try {
 
 // CONTROLLE DU FORMULAIRE
 
-$identifiant_num = $_GET[''];
-$name = $_GET[''];
-$validation_key= $_GET[''];
+$identifiant_num = $_GET['']; //Entre le nom attribué dans votre champs Form
+$name = $_GET['']; //Entre le nom attribué dans votre champs Form
+$validation_key= $_GET['']; //Entre le nom attribué dans votre champs Form
 
 
