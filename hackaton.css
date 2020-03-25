@@ -7,9 +7,8 @@ body{
 a{
     text-decoration: none;
     color: white;
-    }
-
 }
+
 form{
     padding-top: 2cm;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif white;
@@ -17,4 +16,10 @@ form{
     box-sizing: content-box;
     width: 42%;
     margin-left: 5%; 
+}
+.felicitation
+{
+    display: flex;
+    flex-direction: column;
+    align-items:center;
 }
