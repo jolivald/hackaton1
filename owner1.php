@@ -10,7 +10,7 @@
     <!--Formulaire-->
     <form action="Controller" method="POST">
         <fieldset>
-            <legend><a>Formulaire de validation de la transaction:</a></legend>
+            <legend><a>Formulaire de validation de la transaction: </a></legend>
             <!--Id numérique (entier 10 chiffres)-->
             <div>
                 <label for="id"><a>Identifiant numérique:</a></label>
