@@ -17,8 +17,7 @@ form{
     width: 42%;
     margin-left: 5%; 
 }
-.felicitation
-{
+.felicitation{
     display: flex;
     flex-direction: column;
     align-items:center;
