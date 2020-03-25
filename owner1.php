@@ -1,12 +1,13 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-<title>Ma banque</title>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<link rel="stylesheet" href="hackaton.css">
+    <title>Ma banque</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="hackaton.css">
 </head>
 <body>
+    <h1>Monsieur Schylowski</h1>
     <!--Formulaire-->
     <form action="Controller" method="POST">
         <fieldset>
@@ -19,7 +20,7 @@
                 <!--Name-->
             <div>
                 <label for="name"><a>Nom:</a></label>
-                <input type="text" name="id" placeholder="Entrez votre nom" required>
+                <input type="text" name="name" placeholder="Entrez votre nom" required>
             </div>
             <!--Password-->
             <div>
@@ -27,10 +28,10 @@
                 <input type="password" id="password" name="password" placeholder="Entrez votre mot de passe" required>
             </div>
         </fieldset>
-            <!--Submit-->
-            <div class="bouton">
-                <button type="submit"> Valider la transaction </button>
-            </div>
+        <!--Submit-->
+        <div class="bouton">
+            <button type="submit"> Valider la transaction </button>
+        </div>
     </form>
 </body>
 </html>
