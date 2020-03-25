@@ -2,44 +2,71 @@
 
 // CONNEXTION A LA BDD
 
-$dsn = 'mysql:host=localhost;dbname=insertion_sql';
-$user = '';
-$mdp = '';
+$dsn = 'mysql:host=localhost;dbname=insertion_sql;charset=utf8';
+$user = 'alaji';
+$mdp = 'alaji';
 
 try {
     $bdd = new PDO($dsn,$user,$mdp);
     echo 'BDD connectée'. '<br>'.'<br>'.'<br>';
 } catch ( PDOException $E) {
-    echo 'erreur de type = '.$E;
+    
+    die('erreur de type = '.$E);
 }
 
 // Reception Des Données GET
 
-$identifiant_num = $_GET['']; //Entre le nom attribué dans votre champs Form
-$name = $_GET['orlando']; //Entre le nom attribué dans votre champs Form
-$validation_key= $_GET['']; //Entre le nom attribué dans votre champs Form
+$identifiant_num = '1123452537'; //Entre le nom attribué dans votre champs Form
+$ReqName = 'julien'; //Entre le nom attribué dans votre champs Form
+$validation_key= 'tntZ9*'; //Entre le nom attribué dans votre champs Form
 
 
 //nom en BDD
 
-$name ='name';
+$BDD_name ='name';
 $Val_Num = 'identifiant_num';
 $Val_key ='validation_key';
 
 // Controlle avec la BDD
 
 
-$rs_select = $bdd->query("SELECT * FROM user");
+$rs_select = $bdd->prepare("SELECT * FROM user WHERE name=?");
+$rs_select-> execute (array($ReqName));
+
+ 
+    $d = $rs_select->fetch(PDO::FETCH_OBJ);
+    
+        if($ReqName == $d->name)
+        {
+            
+
+            if($identifiant_num == $d->$Val_Num && $validation_key == $d->$Val_key)
+            {
+                
+                setcookie($d->id,$d->name, time()+ 3600 * 24 *365);
+                header('Location: index.php?IdValid=1');
+                
+            }
+
+            else
+            {
+                
+                header('Location: index.php?IdValid=0');
+            }
+
+        }
+        
+        else
+        {
+            
+            header('Location: index.php?IdValid=0');
+        }
+        
+    
+
+ 
 
 
-
-while($d = $rs_select->fetch(PDO::FETCH_ASSOC))
-{
-    echo $d[$name].'<br>';
-    echo $d[$Val_Num].'<br>';
-    echo $d[$Val_key].'<br>';
-    echo '----------------- '.'<br>';
-}
 
 
 
