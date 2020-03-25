@@ -14,3 +14,9 @@ try {
 }
 
 // CONTROLLE DU FORMULAIRE
+
+$identifiant_num = $_GET[''];
+$name = $_GET[''];
+$validation_key= $_GET[''];
+
+
