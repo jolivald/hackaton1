@@ -12,7 +12,7 @@
     justify-content:space-around;
     align-items:center;
 }
-.image
+.titre
 {
     display:flex;
     justify-content:space-around;
@@ -21,11 +21,11 @@
 </style>
 -->
 
-    <title> BRAVO ! </title>
+    <title> Validation aboutie </title>
 
 </head>
 <body>
-    <h1 class="titre"> Félicitaions ! </h1>
-    <img class="image" src="chaton.jpg" alt="photo de chaton">
+    <h1 class="titre"> Merci ! </h1>
+    <h3 class="titre2"> Vous avez tous réussi. </h3>
 </body>
 </html>
