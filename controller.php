@@ -3,7 +3,7 @@
 //--------------------------- CONNEXTION A LA BDD------------------------------------------
 
 $dsn = 'mysql:host=localhost;dbname=insertion_sql;charset=utf8'; //entrer votre config BDD
-$user = 'alaj'; //entrer votre nom d'utilisateur
+$user = 'alaji'; //entrer votre nom d'utilisateur
 $mdp = 'alaji'; //entrer votre mot de pass
 
 try {
