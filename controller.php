@@ -14,7 +14,7 @@ try {
     die('erreur de type = '.$E);
 }
 
-// Reception Des Données GET
+// Reception Des Données POST
 
 $identifiant_num = $_POST['']; //Entre le nom attribué dans votre champs Form
 $ReqName = $_POST['']; //Entre le nom attribué dans votre champs Form
