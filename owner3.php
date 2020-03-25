@@ -9,13 +9,13 @@
 <body>
     <h1>Monsieur Petrov</h1>
     <!--Formulaire-->
-    <form action="Controller" method="POST">
+    <form action="controller.php" method="POST">
         <fieldset>
             <legend><a>Formulaire de validation de la transaction: </a></legend>
             <!--Id numérique (entier 10 chiffres)-->
             <div>
                 <label for="id"><a>Identifiant numérique:</a></label>
-                <input type="number" min="10" max="10" name="id" placeholder="Entrez 10 chiffres" required>
+                <input type="number" min="1000000000" max="9999999999" name="id" placeholder="Entrez 10 chiffres" required>
             </div>
                 <!--Name-->
             <div>
