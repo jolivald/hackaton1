@@ -13,4 +13,13 @@ try {
     echo 'erreur de type = '.$E;
 }
 
-// CONTROLLE DU FORMULAIRE
+// Reception Des Données GET
+
+$identifiant_num = $_GET['']; //Entre le nom attribué dans votre champs Form
+$name = $_GET['']; //Entre le nom attribué dans votre champs Form
+$validation_key= $_GET['']; //Entre le nom attribué dans votre champs Form
+
+
+
+
+
