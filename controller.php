@@ -1,9 +1,9 @@
 <?php
 // ---------------------- CODE GET---------------------------------------
 /* 
-    0 ===> Erreur dans l identification
-    1 ===> Identification reussi
-    2 ===> Erreur de connexion a la BDD
+    0 ===> ERREUR dans l identification
+    1 ===> Identification REUSSI
+    2 ===> ERREUR de connexion a la BDD
 
 
 */
