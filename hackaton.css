@@ -7,7 +7,11 @@ body{
 a{
     text-decoration: none;
     color: white;
+<<<<<<< HEAD
+    }
+=======
 }
+>>>>>>> 22e6e64f8cf35f9a96f513f4c7cc4e0d8ddf3428
 
 form{
     padding-top: 2cm;

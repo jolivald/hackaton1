@@ -8,7 +8,7 @@
 
 */
 
-//--------------------------- CONNEXTION A LA BDD------------------------------------------
+// CONNEXTION A LA BDD
 
 $dsn = 'mysql:host=localhost;dbname=verif_transaction;charset=utf8'; //entrer votre config BDD
 $user = 'alaji';    //entrer votre nom d'utilisateur
@@ -24,9 +24,9 @@ try {
 
 // -------------------------- Reception Des Données POST ------------------------------------
 
-$identifiant_num = $_POST['num'];  //Entre le nom attribué dans votre champs Form
-$ReqName = $_POST['name'];          //Entre le nom attribué dans votre champs Form
-$validation_key= $_POST['key'];    //Entre le nom attribué dans votre champs Form
+$identifiant_num = $_POST[''];  //Entre le nom attribué dans votre champs Form
+$ReqName = $_POST[''];          //Entre le nom attribué dans votre champs Form
+$validation_key= $_POST[''];    //Entre le nom attribué dans votre champs Form
 
 
 //-----------------------nom des colonnes BDD------------------------------------
@@ -75,7 +75,6 @@ $rs_select-> execute (array($ReqName));                         //Recuperation G
     
 
  
-
 
 
 
