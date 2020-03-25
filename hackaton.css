@@ -7,11 +7,7 @@ body{
 a{
     text-decoration: none;
     color: white;
-<<<<<<< HEAD
     }
-=======
-}
->>>>>>> 22e6e64f8cf35f9a96f513f4c7cc4e0d8ddf3428
 
 form{
     padding-top: 2cm;
@@ -26,4 +22,7 @@ form{
     display: flex;
     flex-direction: column;
     align-items:center;
+    border: solid #61A252;
+    background-color:#8FC781;
+    margin-top:30%;
 }
