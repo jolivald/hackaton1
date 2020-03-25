@@ -51,7 +51,7 @@ $rs_select-> execute (array($ReqName));                         //Recuperation G
                         {
                             //Les données sont correct :
 
-                            setcookie($d->id,$d->name, time()+ 3600 * 24 *365);     // création du cookie avec comme nom le ID et valeur le NAME
+                            setcookie($d->id,$d->name, time()+ 180);     // création du cookie avec comme nom le ID et valeur le NAME
                             header('Location: index.php?IdValid=2');                // Renvoi vers index avec une validation sur 1 en GET
                             
                         }
