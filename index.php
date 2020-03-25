@@ -1,12 +1,3 @@
-<?php 
-if(isset ($_COOKIE[1]) && isset($_COOKIE[2])&& isset($_COOKIE[3])&& isset($_COOKIE[4]))
-{
-    header('Location: success.php');
-}
-
-?>
-
-
 <!DOCTYPE html>
 <html lang="fr">
 
