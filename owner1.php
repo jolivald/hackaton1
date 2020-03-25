@@ -10,10 +10,16 @@
     <form action="Success" method="POST">
         <fieldset>
             <legend><a>Formulaire de validation de la transaction:</a></legend>
-        <div>
+
+            <!--Id numérique (entier 10 chiffres)-->
+            <div>
+            <label for="Id"><a>Identifiant numérique:</a></label>
+            <input type="number" name="id" name="id">
+        </div>
+            <div>
             <!--Name-->
-            <label for="id"><a>Identifiants:</a></label>
-            <input type="text" name="id" id="id">
+            <label for="name"><a>Nom:</a></label>
+            <input type="text" name="id" name="id">
         </div>
         <div>
             <!--Password-->
